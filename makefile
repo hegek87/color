@@ -1,2 +1,6 @@
 all:
-	g++ -g -Wall -o color color.cpp
+	g++ -c -g -Wall colmain.cpp
+	g++ -c -g -Wall color.cpp
+	g++ -o color color.o colmain.o
+	
+	mv *.o color bin
