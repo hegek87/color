@@ -6,6 +6,16 @@ Color::Color(double r, double g, double b){
 	this->r = r; this->g = g; this->b = b;
 }
 
+Color::Color(int r, int g, int b){
+	this->r = r; this->g = g; this->b = b;
+}
+
+Color::Color(int rgb){
+	this->r = rgb & RED;
+	this->g = rgb & GREEN;
+	this->b = rgb & BLUE;
+}
+
 Color Color::operator+(const Color& other){
 	return Color(r+other.r, g+other.g, b+other.b);
 }
