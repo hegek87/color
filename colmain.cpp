@@ -13,4 +13,10 @@ int main(void){
 	
 	std::cout << "(" << rgb.getR() << ", " << rgb.getG();
 	std::cout << ", " << rgb.getB() << ")" << std::endl;
+	int c = 0xA187F2;
+	Color t(c);
+	std::cout << t << std::endl;
+	std::cout << 0xA1 << " = " << ((c&0xFF0000) >> 16) << std::endl;
+	std::cout << 0x87 << std::endl;
+	std::cout << 0xF2 << std::endl;
 }

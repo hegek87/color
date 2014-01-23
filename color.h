@@ -7,13 +7,13 @@ static const int GREEN = 0x00FF00;
 static const int BLUE = 0x0000FF;
 class Color{
 	private:
-		double r;
-		double g;
-		double b;
+		char r;
+		char g;
+		char b;
 	public:
 		Color();
-		Color(double, double, double);
-		Color(int,int,int);
+		//Color(double, double, double);
+		Color(char,char,char);
 		Color(int);
 		
 		Color operator+(const Color&);
@@ -22,8 +22,8 @@ class Color{
 		Color negate();
 		Color scalarMul(double);
 		
-		double getR();
-		double getG();
-		double getB();
+		char getR();
+		char getG();
+		char getB();
 };
 #endif
