@@ -25,6 +25,6 @@ class Color{
 		char getR();
 		char getG();
 		char getB();
-		void writeColor(std::ofstream&);
+		std::ostream& writeColor(std::ostream&);
 };
 #endif

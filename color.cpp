@@ -45,7 +45,11 @@ std::ostream& operator<<(std::ostream& os, const Color& other){
 	return os;
 }
 
-void Color::writeColor(std::ofstream& os){
+std::ostream& Color::writeColor(std::ostream& os){
+	os.put(r);
+	os.put(g);
+	os.put(b);
+	return os;
 }
 /*
 char *Color::getColorData(){
