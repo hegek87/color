@@ -44,6 +44,9 @@ std::ostream& operator<<(std::ostream& os, const Color& other){
 	os << other.b << ")";
 	return os;
 }
+
+void Color::writeColor(std::ofstream& os){
+}
 /*
 char *Color::getColorData(){
 	char *ret[3] = {(char *)r, (char *)g, (char *)b };

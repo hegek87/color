@@ -2,9 +2,9 @@
 #define COLOR_H
 #include <iostream>
 
-static const int RED = 0xFF0000;
-static const int GREEN = 0x00FF00;
-static const int BLUE = 0x0000FF;
+const static int RED = 0xFF0000;
+const static int GREEN = 0x00FF00;
+const static int BLUE = 0x0000FF;
 class Color{
 	private:
 		char r;
@@ -25,5 +25,6 @@ class Color{
 		char getR();
 		char getG();
 		char getB();
+		void writeColor(std::ofstream&);
 };
 #endif

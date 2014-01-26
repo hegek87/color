@@ -1,8 +1,8 @@
 #include "color.h"
 
 int main(void){
-	Color rgb(25.0, 255.0, 12.0);
-	Color rgb1(123.0, 5.0, 93.0);
+	Color rgb(1,2,3);
+	Color rgb1(10,102,235);
 	std::cout << rgb << std::endl;
 	std::cout << rgb1 << std::endl;
 	
