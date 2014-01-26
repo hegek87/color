@@ -1,10 +1,15 @@
 #ifndef COLOR_H
 #define COLOR_H
 #include <iostream>
+#include <fstream>
 
 const static int RED = 0xFF0000;
 const static int GREEN = 0x00FF00;
 const static int BLUE = 0x0000FF;
+const static int BLACK = 0x000000;
+const static int WHITE = 0xFFFFFF;
+const static int YELLOW = 0xFFFF00;
+
 class Color{
 	private:
 		char r;
@@ -25,6 +30,6 @@ class Color{
 		char getR();
 		char getG();
 		char getB();
-		std::ostream& writeColor(std::ostream&);
+		std::ofstream& writeColor(std::ofstream&);
 };
 #endif

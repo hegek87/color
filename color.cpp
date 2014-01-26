@@ -2,10 +2,6 @@
 #include "color.h"
 
 Color::Color(){ r = g = b = 0; }
-/*
-Color::Color(double r, double g, double b){
-	this->r = r; this->g = g; this->b = b;
-}*/
 
 Color::Color(char r, char g, char b){
 	this->r = r; this->g = g; this->b = b;
@@ -30,7 +26,7 @@ Color Color::negate(){
 }
 
 Color Color::scalarMul(double factor){
-	return Color((int)(r*factor), (int)(g*factor), (int)(b*factor));
+	return Color((char)(r*factor), (char)(g*factor), (char)(b*factor));
 }
 
 char Color::getR(){ return r; }
@@ -45,14 +41,9 @@ std::ostream& operator<<(std::ostream& os, const Color& other){
 	return os;
 }
 
-std::ostream& Color::writeColor(std::ostream& os){
-	os.put(r);
-	os.put(g);
-	os.put(b);
-	return os;
+std::ofstream& Color::writeColor(std::ofstream& ofs){
+	ofs.put(b);
+	ofs.put(g);
+	ofs.put(r);
+	return ofs;
 }
-/*
-char *Color::getColorData(){
-	char *ret[3] = {(char *)r, (char *)g, (char *)b };
-	return ret;
-}*/
