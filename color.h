@@ -17,7 +17,6 @@ class Color{
 		char b;
 	public:
 		Color();
-		//Color(double, double, double);
 		Color(char,char,char);
 		Color(int);
 		
